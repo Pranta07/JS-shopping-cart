@@ -20,9 +20,19 @@
     <body>
         <section class="container">
             <h2>My shopping cart</h2>
-            <div class="bg-light my-5 p-5">
-                <div class="row bg-white mx-5 p-2 rounded-3 mb-4">
-                    <div class="col-6">
+            <div class="bg-light my-5 p-5 remove-padding">
+                <div
+                    class="
+                        row row-cols-1 row-cols-lg-2
+                        bg-white
+                        mx-5
+                        p-2
+                        rounded-3
+                        mb-4
+                        remove-margin
+                    "
+                >
+                    <div class="col">
                         <div class="row d-flex align-items-center">
                             <div class="col-4">
                                 <img
@@ -38,13 +48,13 @@
                     </div>
                     <div
                         class="
-                            col-6
+                            col
                             d-flex
-                            justify-content-evenly
+                            justify-content-between
                             align-items-center
                         "
                     >
-                        <div class="input-group">
+                        <div class="input-group set-width">
                             <button
                                 onclick="updateQuantity('phone',1)"
                                 class="btn"
@@ -86,8 +96,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="row bg-white mx-5 p-3 rounded-3 mb-4">
-                    <div class="col-6">
+                <div
+                    class="
+                        row row-cols-1 row-cols-lg-2
+                        bg-white
+                        mx-5
+                        p-3
+                        rounded-3
+                        mb-4
+                        remove-margin
+                    "
+                >
+                    <div class="col">
                         <div class="row d-flex align-items-center">
                             <div class="col-4">
                                 <img
@@ -103,13 +123,13 @@
                     </div>
                     <div
                         class="
-                            col-6
+                            col
                             d-flex
-                            justify-content-evenly
+                            justify-content-between
                             align-items-center
                         "
                     >
-                        <div class="input-group">
+                        <div class="input-group set-width">
                             <button
                                 onclick="updateQuantity('case',1)"
                                 class="btn"
@@ -151,21 +171,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="row bg-white mx-5 py-3 px-5 rounded-3 mb-4">
-                    <div class="d-flex justify-content-between">
-                        <div class="col-6 fw-bold">
+                <div
+                    class="
+                        row
+                        bg-white
+                        mx-5
+                        py-3
+                        px-5
+                        rounded-3
+                        mb-4
+                        remove-margin
+                    "
+                >
+                    <div class="d-flex">
+                        <div class="col fw-bold">
                             <h5>Subtotal:</h5>
                             <h5>Tax:</h5>
                             <h5>Total:</h5>
                         </div>
-                        <div class="col-6 fw-bold text-end">
+                        <div class="col fw-bold text-end">
                             <h5>$<span id="subtotal">1278</span></h5>
                             <h5>$<span id="tax">127.8</span></h5>
                             <h5>$<span id="total">1405.8</span></h5>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end pe-5 pt-3">
+                <div class="d-flex justify-content-center pt-3">
                     <button class="btn btn-success px-4 py-2 fs-5">
                         Check Out
                     </button>

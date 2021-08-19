@@ -7,3 +7,15 @@
 .input-group {
     width: 33% !important;
 }
+
+@media only screen and (max-width: 767px) {
+    .remove-margin {
+        margin: 10px 0px !important;
+    }
+    .remove-padding {
+        padding: 20px !important;
+    }
+    .set-width {
+        width: 50% !important;
+    }
+}
