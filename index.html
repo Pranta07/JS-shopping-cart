@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping cart</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/4b5de4af50.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <section class="container">
+            <h2>My shopping cart</h2>
+            <div class="bg-light my-5 p-5">
+                <div class="row bg-white mx-5 p-2 rounded-3 mb-4">
+                    <div class="col-6">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-4">
+                                <img
+                                    src="images/product-1.png"
+                                    alt=""
+                                    class="w-100"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <h5>iPhone 11 128GB Black</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            col-6
+                            d-flex
+                            justify-content-evenly
+                            align-items-center
+                        "
+                    >
+                        <div class="input-group">
+                            <button
+                                onclick="updateQuantity('phone',1)"
+                                class="btn"
+                            >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <input
+                                type="number"
+                                name=""
+                                id="phone-input"
+                                value="1"
+                                class="
+                                    btn
+                                    bg-light
+                                    rounded-3
+                                    text-center
+                                    fw-bold
+                                "
+                                style="width: 60px"
+                            />
+                            <button
+                                onclick="updateQuantity('phone',-1)"
+                                class="btn"
+                            >
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <div class="fw-bold fs-5">
+                            $<span id="phone-total">1219</span>
+                        </div>
+                        <div>
+                            <img
+                                src="images/remove.png"
+                                alt=""
+                                width="24"
+                                height="24"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-white mx-5 p-3 rounded-3 mb-4">
+                    <div class="col-6">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-4">
+                                <img
+                                    src="images/product-2.png"
+                                    alt=""
+                                    class="w-100"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <h5>iPhone 11 Silicone Case - Black</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            col-6
+                            d-flex
+                            justify-content-evenly
+                            align-items-center
+                        "
+                    >
+                        <div class="input-group">
+                            <button
+                                onclick="updateQuantity('case',1)"
+                                class="btn"
+                            >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <input
+                                type="number"
+                                name=""
+                                id="case-input"
+                                value="1"
+                                class="
+                                    btn
+                                    bg-light
+                                    rounded-3
+                                    text-center
+                                    fw-bold
+                                "
+                                style="width: 60px"
+                            />
+                            <button
+                                onclick="updateQuantity('case',-1)"
+                                class="btn"
+                            >
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <div class="fw-bold fs-5">
+                            $<span id="case-total">59</span>
+                        </div>
+                        <div>
+                            <img
+                                src="images/remove.png"
+                                alt=""
+                                width="24"
+                                height="24"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-white mx-5 py-3 px-5 rounded-3 mb-4">
+                    <div class="d-flex justify-content-between">
+                        <div class="col-6 fw-bold">
+                            <h5>Subtotal:</h5>
+                            <h5>Tax:</h5>
+                            <h5>Total:</h5>
+                        </div>
+                        <div class="col-6 fw-bold text-end">
+                            <h5>$<span id="subtotal">1278</span></h5>
+                            <h5>$<span id="tax">0</span></h5>
+                            <h5>$<span id="total">1278</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end pe-5 pt-3">
+                    <button class="btn btn-success px-4 py-2 fs-5">
+                        Check Out
+                    </button>
+                </div>
+            </div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
