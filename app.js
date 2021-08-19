@@ -4,7 +4,7 @@ const casePrice = 59;
 function updateQuantity(type, change) {
     const input = document.getElementById(type + "-input");
     const curValue = parseInt(input.value);
-    if (change == -1 && curValue <= 0) {
+    if ((change == -1 && curValue == 0) || curValue < 0) {
         return;
     }
     input.value = curValue + change;
