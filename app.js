@@ -16,4 +16,22 @@ function updateQuantity(type, change) {
     } else {
         total.innerText = quantity * casePrice;
     }
+
+    updateTotal();
+}
+
+function updateTotal() {
+    const phoneTotal = parseInt(
+        document.getElementById("phone-total").innerText
+    );
+    const caseTotal = parseInt(document.getElementById("case-total").innerText);
+
+    const subtotal = phoneTotal + caseTotal;
+    document.getElementById("subtotal").innerText = subtotal;
+
+    const tax = subtotal / 10;
+    document.getElementById("tax").innerText = tax;
+
+    const total = subtotal + tax;
+    document.getElementById("total").innerText = total;
 }
